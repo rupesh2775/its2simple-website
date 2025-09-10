@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>It's 2 SIMPLE - Learn Physics Easily</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">It's 2 SIMPLE</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="darkModeToggle">🌙</button>
+        <div class="menu-toggle" id="menuToggle">☰</div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero fade-in">
+    <div class="hero-content">
+      <h1>Welcome to It's 2 SIMPLE 🚀</h1>
+      <p>Making Physics and Science simple, fun and powerful for everyone.</p>
+      <a href="https://youtube.com/@itis2simple" target="_blank" class="btn">Visit YouTube</a>
+      <p class="hero-subtitle">✍️Learn Physics with RUPESH✍️</p>
+    </div>
+  </section>
+
+  <!-- Videos Section -->
+  <section id="videos" class="videos slide-up">
+    <h2>Latest Videos</h2>
+    <div class="video-grid">
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Add this link in navbar -->
+<li><a href="#notes">Notes</a></li>
+
+<!-- Notes Section -->
+<section id="notes" class="notes slide-up">
+  <h2>📘 Study Materials & Notes</h2>
+  <p>Download class notes, practice questions, and study guides:</p>
+  <div class="notes-grid">
+    <div class="note-card">
+      <h3>Physics - Mechanics</h3>
+      <p>Important formulas & solved MCQs</p>
+      <a href="materials/mechanics.pdf" download class="btn">⬇ Download</a>
+    </div>
+    <div class="note-card">
+      <h3>Electricity & Magnetism</h3>
+      <p>Quick revision notes</p>
+      <a href="materials/electricity.pdf" download class="btn">⬇ Download</a>
+    </div>
+    <div class="note-card">
+      <h3>Practice MCQs</h3>
+      <p>100+ solved multiple choice questions</p>
+      <a href="materials/mcqs.pdf" download class="btn">⬇ Download</a>
+    </div>
+  </div>
+</section>
+
+<!-- Mock Test Section -->
+<section id="mocktest" class="mocktest">
+  <h2>📝 Mock Tests</h2>
+  <p>Select a subject and test your knowledge!</p>
+
+  <!-- Subject selector -->
+  <select id="subjectSelect">
+    <option value="physics">Physics</option>
+    <option value="maths">Mathematics</option>
+    <option value="chemistry">Chemistry</option>
+  </select>
+  
+  <!-- Quiz box -->
+  <div id="quizBox" class="quiz-box">
+    <h3 id="question">Question will appear here</h3>
+    <div id="options"></div>
+    <button onclick="nextQuestion()">Next</button>
+  </div>
+
+  <!-- Score display -->
+  <div id="result" class="result"></div>
+</section>
+
+  <!-- About Section -->
+  <section id="about" class="about fade-in">
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm Rupesh 👋, the creator of "It’s 2 SIMPLE".  
+      My mission is to simplify Physics and Science concepts so that anyone can
+      understand them easily and enjoy learning and join me in this journey of learning. 
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact slide-up">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:its2simple@gmail.com">its2simple@gmail.com</a></p>
+    <p>YouTube: <a href="https://youtube.com/@itis2simple" target="_blank">Visit Channel</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 It's 2 SIMPLE. All rights reserved. | Designed with ❤️ by Rupesh</p>
+  </footer>
+</body>
+</html>
