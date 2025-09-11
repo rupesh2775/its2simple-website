@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rupesh2775.github.io/its2simple-website/sitemap.xml
