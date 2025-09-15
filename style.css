@@ -253,7 +253,7 @@ body.dark .note-card {
 .mocktest {
   padding: 50px 20px;
   text-align: center;
-  background: #f4f7fb;
+  background: #1968cf;
 }
 
 .mocktest h2 {
@@ -272,7 +272,7 @@ body.dark .note-card {
 .quiz-box {
   margin: 20px auto;
   padding: 20px;
-  background: white;
+  background: rgb(0, 0, 0);
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   width: 100%;
