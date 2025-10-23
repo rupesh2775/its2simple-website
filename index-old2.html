@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>It's 2 SIMPLE - Learn with Rupesh</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">It's 2 SIMPLE</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#notes">Notes</a></li>
+        <li><a href="#mocktest">Mock Tests</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="darkModeToggle" title="Toggle Dark Mode">🌙</button>
+        <div class="menu-toggle" id="menuToggle">☰</div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section id="home" class="hero fade-in">
+    <h1 class="slide-text">Welcome to It's 2 SIMPLE</h1>
+    <p class="hero-subtitle">Learn Physics with <span class="name">Rupesh</span></p>
+    <a href="#videos" class="btn">Start Learning</a>
+  </section>
+
+  <!-- ===== Video Section ===== -->
+  <section id="videos" class="videos">
+    <h2>Latest Videos</h2>
+
+    <div class="video-row">
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/OD3RnVNLxOY" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="notes-box">
+        <h3>Class 01 – Physics Basics</h3>
+        <p>Download class notes and practice problems.</p>
+        <a href="materials/class01.pdf" class="btn" download>📘 Download Notes</a>
+      </div>
+    </div>
+
+    <div class="video-row">
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/Mp0vbYziW_E" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="notes-box">
+        <h3>Class 02 – Motion & Laws</h3>
+        <p>Understand motion, forces, and Newton’s laws.</p>
+        <a href="materials/class02.pdf" class="btn" download>📘 Download Notes</a>
+      </div>
+    </div>
+
+    <div class="view-all">
+      <a href="https://www.youtube.com/@its2simple" target="_blank" class="btn">📺 View All Videos</a>
+    </div>
+  </section>
+
+  <!-- ===== Notes Section ===== -->
+  <section id="notes" class="notes">
+    <h2>Study Materials</h2>
+    <div class="notes-grid">
+
+      <div class="note-card">
+        <h3>Thermodynamics</h3>
+        <p>Detailed notes with solved examples.</p>
+        <a href="materials/thermodynamics.pdf" class="btn" download>📄 Download</a>
+      </div>
+
+      <div class="note-card">
+        <h3>Quantum Mechanics</h3>
+        <p>Concepts, formulas, and practice sets.</p>
+        <a href="materials/quantum.pdf" class="btn" download>📄 Download</a>
+      </div>
+
+      <div class="note-card">
+        <h3>Electromagnetism</h3>
+        <p>Maxwell equations & applications explained.</p>
+        <a href="materials/em.pdf" class="btn" download>📄 Download</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== Mock Test Section ===== -->
+  <section id="mocktest" class="mocktest">
+    <h2>Mock Tests</h2>
+    <p>Test your knowledge and see your score instantly.</p>
+
+    <select id="subjectSelect">
+      <option value="">Select Subject</option>
+      <option value="physics">Physics</option>
+      <option value="maths">Mathematics</option>
+      <option value="chemistry">Chemistry</option>
+    </select>
+
+    <div class="quiz-box" id="quizBox">
+      <h3 id="question">Select a subject to start</h3>
+      <div id="options"></div>
+      <div class="result" id="result"></div>
+    </div>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section id="about" class="about fade-in">
+    <h2>About Me</h2>
+    <p>Hello, I'm <strong>Rupesh</strong>, a passionate educator dedicated to simplifying complex physics concepts for students preparing for Jharkhand JSSC CGL (Technical) and beyond.</p>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" class="contact fade-in">
+    <h2>Contact</h2>
+    <p>Have questions or feedback? Connect with me:</p>
+    <a href="mailto:its2simpleclass@gmail.com" class="btn">📧 Email Me</a>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>© 2025 It's 2 SIMPLE | Made with ❤️ by Rupesh</p>
+  </footer>
+
+</body>
+</html>
