@@ -116,3 +116,12 @@ function resetQuiz() {
 
 // Start first quiz
 resetQuiz();
+// 🌙 Theme Toggle Logic
+const toggleBtn = document.getElementById('themeToggle');
+let darkMode = false;
+
+toggleBtn.addEventListener('click', () => {
+  darkMode = !darkMode;
+  document.body.classList.toggle('dark-mode', darkMode);
+  toggleBtn.textContent = darkMode ? '☀️ Light Mode' : '🌙 Dark Mode';
+});
