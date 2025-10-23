@@ -103,70 +103,86 @@
   <!-- Add this link in navbar -->
 <li><a href="#notes">Notes</a></li>
 
-<!-- Notes Section -->
-<section id="notes" class="notes slide-up">
+<!-- ===== Notes Section ===== -->
+<section id="notes" class="notes fade-in">
   <h2>📘 Study Materials & Notes</h2>
   <p>Download class notes, practice questions, and study guides:</p>
+
   <div class="notes-grid">
     <div class="note-card">
-      <h3>Physics - WAVE MCQs PRACTICE Class 01</h3>
+      <h3>Physics – Wave MCQs Practice Class 01</h3>
       <p>Important formulas & solved MCQs</p>
-      <a href="materials/WAVE MCQs PRACTICE Class 01.pdf" download class="btn">⬇ Download</a>
+      <a href="materials/waves.pdf" class="btn" download>📥 Download</a>
     </div>
+
     <div class="note-card">
-      <h3>Solid_State_Devices_Electronics
-        20_MCQs_Solutions
-      Class 02</h3>
-      <p>Quick revision notes</p>
-      <a href="materials/Solid_State_Devices_Electronics_20_MCQs_Solutions.pdf" download class="btn">⬇ Download</a>
+      <h3>Solid State & Electronics – Class 02</h3>
+      <p>Quick revision notes with solutions</p>
+      <a href="materials/solidstate.pdf" class="btn" download>📥 Download</a>
     </div>
+
     <div class="note-card">
       <h3>Practice MCQs</h3>
       <p>100+ solved multiple choice questions</p>
-      <a href="materials/mcqs.pdf" download class="btn">⬇ Download</a>
+      <a href="materials/mcq.pdf" class="btn" download>📥 Download</a>
     </div>
   </div>
 </section>
 
-<!-- Mock Test Section -->
-<section id="mocktest" class="mocktest">
-  <h2>📝 Mock Tests</h2>
+<!-- ===== Mock Test Section ===== -->
+<section id="mocktest" class="mocktest slide-up">
+  <h2>🧠 Mock Tests</h2>
   <p>Select a subject and test your knowledge!</p>
 
-  <!-- Subject selector -->
-  <select id="subjectSelect">
-    <option value="physics">Physics</option>
-    <option value="maths">Mathematics</option>
-    <option value="chemistry">Chemistry</option>
-  </select>
-  
-  <!-- Quiz box -->
-  <div id="quizBox" class="quiz-box">
-    <h3 id="question">Question will appear here</h3>
-    <div id="options"></div>
-    <button onclick="nextQuestion()">Next</button>
-  </div>
+  <div class="mock-box">
+    <select id="subjectSelect">
+      <option value="physics">Physics</option>
+      <option value="electronics">Electronics</option>
+    </select>
 
-  <!-- Score display -->
-  <div id="result" class="result"></div>
+    <div id="quiz-box">
+      <h3 id="question">What is the SI unit of Force?</h3>
+      <div id="options">
+        <button>Newton</button>
+        <button>Joule</button>
+        <button>Watt</button>
+        <button>Pascal</button>
+      </div>
+      <button id="next-btn" class="btn">Next ➜</button>
+    </div>
+  </div>
 </section>
 
-  <!-- About Section -->
-  <section id="about" class="about fade-in">
-    <h2>About Me</h2>
-    <p>
-      Hi, I'm Rupesh 👋, the creator of "It’s 2 SIMPLE".  
-      My mission is to simplify Physics and Science concepts so that anyone can
-      understand them easily and enjoy learning and join me in this journey of learning. 
-    </p>
-  </section>
+  <!-- ===== About Section ===== -->
+<section id="about" class="about fade-in">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>👨‍🏫 About Me</h2>
+      <p>
+        Hi, I'm <span class="highlight">Rupesh</span> — the creator of 
+        <strong>"It's 2 SIMPLE"</strong>. My goal is to make <b>Physics</b> and 
+        <b>Science</b> simple, interactive, and enjoyable for every learner.
+      </p>
+      <p>
+        I believe that learning should be clear, engaging, and practical — not
+        memorized blindly. That’s why every class, note, and test here is 
+        carefully designed to help you <b>understand</b> the “why” behind each concept.
+      </p>
+      <p class="quote">
+        “Education is not the learning of facts, but the training of the mind to think.” — Einstein
+      </p>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact slide-up">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:its2simple@gmail.com">its2simple@gmail.com</a></p>
-    <p>YouTube: <a href="https://youtube.com/@itis2simple" target="_blank">Visit Channel</a></p>
-  </section>
+      <div class="about-buttons">
+        <a href="#videos" class="btn">🎥 Watch My Videos</a>
+        <a href="mailto:its2simple@gmail.com" class="btn btn-outline">📧 Contact Me</a>
+      </div>
+    </div>
+
+    <div class="about-image">
+      <img src="images/profile.png" alt="Rupesh - Physics Mentor" />
+    </div>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer>
