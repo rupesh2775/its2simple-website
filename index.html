@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="google-site-verification" content="v-B63dX_1GXaJqDKJnzRPIH7QFK5Z13eorSH93Cl5sY" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>It's 2 SIMPLE - Learn Physics Easily</title>
@@ -104,30 +105,30 @@
 <li><a href="#notes">Notes</a></li>
 
 <!-- ===== Notes Section ===== -->
-<section id="notes" class="notes fade-in">
-  <h2>📘 Study Materials & Notes</h2>
-  <p>Download class notes, practice questions, and study guides:</p>
-
-  <div class="notes-grid">
-    <div class="note-card">
-      <h3>Physics – Wave MCQs Practice Class 01</h3>
-      <p>Important formulas & solved MCQs</p>
-      <a href="materials/waves.pdf" class="btn" download>📥 Download</a>
-    </div>
-
-    <div class="note-card">
-      <h3>Solid State & Electronics – Class 02</h3>
-      <p>Quick revision notes with solutions</p>
-      <a href="materials/solidstate.pdf" class="btn" download>📥 Download</a>
-    </div>
-
-    <div class="note-card">
-      <h3>Practice MCQs</h3>
-      <p>100+ solved multiple choice questions</p>
-      <a href="materials/mcq.pdf" class="btn" download>📥 Download</a>
-    </div>
-  </div>
+<section id="notes" class="notes">
+  <h2>📘 Latest Notes</h2>
+  <div id="notesContainer" class="notes-grid"></div>
 </section>
+
+<script>
+fetch('https://its2simple-backend.onrender.com/api/notes') // backend se data fetch
+  .then(res => res.json())
+  .then(data => {
+    const container = document.getElementById('notesContainer');
+    container.innerHTML = ''; // clear old notes
+    data.forEach(note => {
+      container.innerHTML += `
+        <div class="note-card">
+          <h3>${note.title}</h3>
+          <p>${note.description}</p>
+          <a href="${note.filePath}" target="_blank" class="btn">Download</a>
+        </div>
+      `;
+    });
+  })
+  .catch(err => console.log('Error loading notes:', err));
+</script>
+
 
 <!-- ===== Mock Test Section ===== -->
 <section id="mocktest" class="mocktest slide-up">
